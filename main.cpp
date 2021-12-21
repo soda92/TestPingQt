@@ -44,7 +44,7 @@ int main(int argc, char *argv[])
     QRegularExpressionMatch match = re.match(std_out);
     bool hasMatch = match.hasMatch();
     if(hasMatch){
-        std::cout << match.captured(0) << "\n";
+        std::cout << match.captured(0).toStdString() << "\n";
     }
     return 0;
 //    return a.exec();
